@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Explore Europe </title>
+    <link rel="icon" href="images/web_icon.png" sizes="32x32" type="image/png">
+</head>
+<body>
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;500&family=Poppins:wght@400;600&family=Raleway:wght@800&display=swap');
+        * { margin: 0; padding: 0;}
+        body { background: #0f0f0f;}
+        .locations { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: center; }
+        .loc { background-color: rgba(255, 255, 255, .15);   backdrop-filter: blur(10px); width: 100%; height: 210px; border-radius: 25px; display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; } 
+        .loc-l { width: 55%; height: 90%; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; }
+        .loc-l h2 {color: #f0f0f0; font-family: 'Poppins'; font-size: 36px; font-weight: 650; }
+        .loc-l p { color: #f0f0f0; font-family: 'Poppins'; font-size: 14px; font-weight: 350; margin-bottom: 15px; }
+        .loc-l a { color: #1DF765; font-family: 'Poppins'; font-size: 12px; font-weight: 400; text-decoration: none; margin-bottom: 10px; }
+        .loc-l a:hover { color: #00cc33; font-weight: 400; text-decoration: underline; }
+        .loc-r { width: 35%; height: 90%; border-radius: 20px; position: relative; left: 29px; } 
+    </style>
+
+    <div class="nav">
+        <div class="nav-logo">
+            <img src="images/web_icon.png" width="30px">
+            <h4> Where.to </h4>
+        </div>
+        <div class="nav-links">
+            <a href="home.html"> Home </a>
+            <a href="home.html#featured"> Featured </a>
+            <a href="home.html#explore"> Explore </a>
+            <a href="home.html#about"> About </a>
+            <a href="home.html#links"> Links </a>   
+        </div>
+        <style>              
+            .nav { width: 100%; height: 7vh; background: #0f0f0f; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+            .nav-logo { margin-left: 10px; width: 13%; display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; color: #fff; font-weight: 550; font-family: 'Raleway'; font-size: 25px; }
+            .nav-logo h4 { position: relative; left:  10px; }
+            .nav-links { width: 35%; display: flex; flex-direction: row; justify-content: space-around; align-items: center; }
+            .nav a { color: #fff; font-size: 16px; font-family: 'Poppins', "sans-serif"; font-weight: 300; text-decoration: none; }
+            .nav a:hover { color:  #1DF765; }
+        </style>
+    </div>
+
+    <div class="hero">
+        <div class="hero-filter"></div>
+            <h1> EUROPE </h1>
+            <p>- beauty beyond borders. </p>
+            <img src="images/arrow_down.png" width="25px">
+        <style>
+            .hero { width: 100%; height: 100vh; background: url('images/europe_2.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center; }
+            .hero-filter { width: 100%; height: 100%; background: #000; opacity: 85%; position: absolute; z-index: 0; }
+            .hero h1 { color: #fff; font-size: 100px; font-family: 'Poppins'; font-weight: 600; z-index: 1; }
+            .hero p { color: #fff; font-size: 20px; font-family: 'Poppins'; font-weight: 400; z-index: 1; }
+            .hero img { margin: 20px; z-index: 1; }
+        </style>
+    </div>
+    
+    <div class="featured-countries"> 
+        <h2> Featured Countries </h2>
+        <style>
+            .featured-countries { width: 100%; height: 25vh; background: #f0f0f0; display: flex; justify-content: center; align-items: center; color: #0f0f0f; font-family: 'Bebas Neue'; font-size: 40px; font-weight: 600; }
+        </style>
+    </div>
+
+    <br>
+
+    <div class="france" if="france">
+        <div class="france-container">
+            <div class="france-header">
+                <h1> France </h1>
+                <img src="images/france-flag.png" width="60px">
+            </div>
+            <div class="locations">
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> The Eiffel Tower </h2>
+                        <p> Paris's Eiffel Tower is an iconic symbol of France and a must-visit attraction, offering breathtaking views of the city from its towering structure. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc1"></div>
+                </div>
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> Valensole Lavender Fields </h2>
+                        <p> The Lavender fields of Valensole, in the Provence region of France, burst with vibrant colors and fragrant blossoms, creating a sensory delight for visitors during the summer months. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc2"></div>
+                </div>
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> Versailles Palace </h2>
+                        <p> The Palace of Versailles is a masterpiece of opulent architecture and rich history, offering a glimpse into France's royal past with its grand halls, beautiful gardens, and the Hall of Mirrors. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc3"></div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .france { width: 100%; height: 120vh; background: #0f0f0f; display: flex; justify-content: center; align-items: center; }
+            .france-container { padding-bottom: 90px; width: 90%; height: 85%; }
+            .france-header { width: 100%; height: 15%; color: #fff; font-family: 'Poppins'; font-size: 30px; font-weight: 650; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
+            .france-header img {  margin: 20px; }
+            #loc1 { background: url('images/france_1.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+            #loc2 { background: url('images/france_2.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+            #loc3 { background: url('images/france_3.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+        </style>
+    </div>
+
+    <br>
+
+    <div class="netherlands" id="netherlands">
+        <div class="netherlands-container">
+            <div class="netherlands-header">
+                <h1> Netherlands </h1>
+                <img src="images/netherlands-flag.png" width="60px">
+            </div>
+            <div class="locations">
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> Keukenhof Gardens </h2>
+                        <p> Keukenhof Gardens in the Netherlands is a floral paradise known for its millions of tulips and other springtime flowers, making it one of the world's most spectacular gardens. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc4"></div>
+                </div>
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> Rijksmuseum </h2>
+                        <p> Amsterdam's Rijksmuseum is a treasure trove of Dutch art and history, showcasing works by famous painters like Rembrandt and Vermeer, along with a collection of historical artifacts. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc5"></div>
+                </div>
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> Anne Frank House </h2>
+                        <p> The Anne Frank House in Amsterdam is a poignant museum that preserves the secret annex where Anne Frank and her family hid during World War II, offering a profound look into the history of the Holocaust. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc6"></div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .netherlands { width: 100%; height: 120vh; background: #0f0f0f; display: flex; justify-content: center; align-items: center; }
+            .netherlands-container { padding-bottom: 90px; width: 90%; height: 85%; }
+            .netherlands-header { width: 100%; height: 15%; color: #fff; font-family: 'Poppins'; font-size: 30px; font-weight: 650; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
+            .netherlands-header img {  margin: 20px; }
+            #loc4 { background: url('images/netherlands_1.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+            #loc5 { background: url('images/netherlands_2.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+            #loc6 { background: url('images/netherlands_3.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+        </style>
+    </div>
+
+    <br>
+
+    <div class="iceland" id="iceland">
+        <div class="iceland-container">
+            <div class="iceland-header">
+                <h1> Iceland </h1>
+                <img src="images/iceland-flag.png" width="60px">
+            </div>
+            <div class="locations">
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> Blue Lagoon </h2>
+                        <p> Iceland's Blue Lagoon is a geothermal wonder, featuring milky-blue geothermal waters set against a volcanic landscape, making it a popular spot for relaxation and rejuvenation. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc7"></div>
+                </div>
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> Geysir Geothermal Area </h2>
+                        <p> Iceland's Geysir Geothermal Area is known for its erupting geysers, bubbling mud pots, and vibrant geothermal activity, providing a glimpse into the island's volcanic and geothermal forces. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc8"></div>
+                </div>
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> Vatnajökull National Park </h2>
+                        <p>  Vatnajökull National Park in Iceland is a vast wilderness encompassing glaciers, dramatic waterfalls, and diverse ecosystems, making it a paradise for adventurers and nature enthusiasts. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc9"></div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .iceland { width: 100%; height: 120vh; background: #0f0f0f; display: flex; justify-content: center; align-items: center; }
+            .iceland-container { padding-bottom: 90px; width: 90%; height: 85%; }
+            .iceland-header { width: 100%; height: 15%; color: #fff; font-family: 'Poppins'; font-size: 30px; font-weight: 650; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
+            .iceland-header img {  margin: 20px; }
+            #loc7 { background: url('images/iceland_1.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+            #loc8 { background: url('images/iceland_2.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+            #loc9 { background: url('images/iceland_3.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+        </style>
+    </div>
+
+    <br> <br>
+
+    <div class="more">
+        <h1> More content in the future! </h1>
+        <button onclick="location.href ='home.html#links';"> Go to links </button>
+        <style>  
+            .more { width: 100%; height: 50vh; background: #f0f0f0; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+            .more h1 { color: #1DF765; font-family: 'Poppins'; font-size: 30px; font-weight: 650; }
+            .more button {  margin-top: 30px; width: 200px; height: 40px; background: transparent; border: solid 2.5px #0f0f0f; border-radius: 10px; color: #000; font-family: 'Bebas Neue'; font-size: 26px; } 
+            .more button:hover { background: #00cc33; color: #fff; }
+        </style>
+    </div>
+</body>
+</html>

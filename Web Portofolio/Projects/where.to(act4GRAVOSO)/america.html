@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Explore America </title>
+    <link rel="icon" href="images/web_icon.png" sizes="32x32" type="image/png">
+</head>
+<body>
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;500&family=Poppins:wght@400;600&family=Raleway:wght@800&display=swap');
+        * { margin: 0; padding: 0;}
+        body { background: #0f0f0f;}
+        .locations { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: center; }
+        .loc { background-color: rgba(255, 255, 255, .15);   backdrop-filter: blur(10px); width: 100%; height: 210px; border-radius: 25px; display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; } 
+        .loc-l { width: 55%; height: 90%; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; }
+        .loc-l h2 {color: #f0f0f0; font-family: 'Poppins'; font-size: 36px; font-weight: 650; }
+        .loc-l p { color: #f0f0f0; font-family: 'Poppins'; font-size: 14px; font-weight: 350; margin-bottom: 15px; }
+        .loc-l a { color: #1DF765; font-family: 'Poppins'; font-size: 12px; font-weight: 400; text-decoration: none; margin-bottom: 10px; }
+        .loc-l a:hover { color: #00cc33; font-weight: 400; text-decoration: underline; }
+        .loc-r { width: 35%; height: 90%; border-radius: 20px; position: relative; left: 29px; } 
+    </style>
+
+    <div class="nav">
+        <div class="nav-logo">
+            <img src="images/web_icon.png" width="30px">
+            <h4> Where.to </h4>
+        </div>
+        <div class="nav-links">
+            <a href="home.html"> Home </a>
+            <a href="home.html#featured"> Featured </a>
+            <a href="home.html#explore"> Explore </a>
+            <a href="home.html#about"> About </a>
+            <a href="home.html#links"> Links </a>   
+        </div>
+        <style>              
+            .nav { width: 100%; height: 7vh; background: #0f0f0f; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+            .nav-logo { margin-left: 10px; width: 13%; display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; color: #fff; font-weight: 550; font-family: 'Raleway'; font-size: 25px; }
+            .nav-logo h4 { position: relative; left:  10px; }
+            .nav-links { width: 35%; display: flex; flex-direction: row; justify-content: space-around; align-items: center; }
+            .nav a { color: #fff; font-size: 16px; font-family: 'Poppins', "sans-serif"; font-weight: 300; text-decoration: none; }
+            .nav a:hover { color:  #1DF765; }
+        </style>
+    </div>
+
+    <div class="hero">
+        <div class="hero-filter"></div>
+        <h1> AMERICA </h1>
+        <p>- the best of the west. </p>
+        <img src="images/arrow_down.png" width="25px">
+        <style>
+            .hero { width: 100%; height: 100vh; background: url('images/america2.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center; }
+            .hero-filter { width: 100%; height: 100%; background: #000; opacity: 85%; position: absolute; z-index: 0; }
+            .hero h1 { color: #fff; font-size: 100px; font-family: 'Poppins'; font-weight: 600; z-index: 1; }
+            .hero p { color: #fff; font-size: 20px; font-family: 'Poppins'; font-weight: 400; z-index: 1; }
+            .hero img { margin: 20px; z-index: 1; }
+        </style>
+    </div>
+    
+    <div class="featured-countries"> 
+        <h2> Featured Countries </h2>
+        <style>
+            .featured-countries { width: 100%; height: 25vh; background: #f0f0f0; display: flex; justify-content: center; align-items: center; color: #0f0f0f; font-family: 'Bebas Neue'; font-size: 40px; font-weight: 600; }
+        </style>
+    </div>
+
+    <br>
+
+    <div class="usa" id="usa">
+        <div class="usa-container">
+            <div class="usa-header">
+                <h1> United States of America </h1>
+                <img src="images/america-flag.png" width="60px">
+            </div>
+            <div class="locations">
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> The Grand Teton </h2>
+                        <p> Wyoming's Grand Teton National Park is a rugged and majestic destination featuring the towering Teton Range, pristine lakes, and abundant wildlife. It's a haven for outdoor activities like hiking, camping, and wildlife viewing. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc1"></div>
+                </div>
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> Golden Gate Bridge </h2>
+                        <p> San Francisco's Golden Gate Bridge is an iconic architectural marvel and a symbol of the West Coast of the United States. It spans the entrance to San Francisco Bay, offering breathtaking views and pedestrian access for an unforgettable experience. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc2"></div>
+                </div>
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> The Grand Canyon </h2>
+                        <p> The Grand Canyon in Arizona is a UNESCO World Heritage Site and one of the world's most awe-inspiring natural wonders. Its immense chasm, sculpted by the Colorado River, showcases ever-changing colors and geological history. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc3"></div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .usa { width: 100%; height: 120vh; background: #0f0f0f; display: flex; justify-content: center; align-items: center; }
+            .usa-container { padding-bottom: 90px; width: 90%; height: 85%; }
+            .usa-header { width: 100%; height: 15%; color: #fff; font-family: 'Poppins'; font-size: 30px; font-weight: 650; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
+            .usa-header img {  margin: 20px; }
+            #loc1 { background: url('images/usa_1b.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+            #loc2 { background: url('images/usa_2.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+            #loc3 { background: url('images/usa_3.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+        </style>
+    </div>
+
+    <br>
+
+    <div class="brazil" id="brazil">
+        <div class="brazil-container">
+            <div class="brazil-header">
+                <h1> Brazil </h1>
+                <img src="images/brazil-flag.png" width="60px">
+            </div>
+            <div class="locations">
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> Christ the Redeemer </h2>
+                        <p> Perched atop Rio de Janeiro's Corcovado Mountain, Christ the Redeemer is an iconic statue overlooking the city, offering panoramic views and a symbol of faith and Brazilian culture. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc4"></div>
+                </div>
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> Iguazu Falls </h2>
+                        <p>  Straddling the border of Brazil and Argentina, Iguazu Falls is a spectacular series of waterfalls set amidst lush rainforest, and it's one of the most stunning natural wonders in the world. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc5"></div>
+                </div>
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> Amazon Rainforest </h2>
+                        <p> The Amazon Rainforest is the world's largest tropical rainforest, spanning several South American countries. It's a biodiversity hotspot, teeming with unique flora and fauna, and offers opportunities for eco-tourism and exploration. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc6"></div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .brazil { width: 100%; height: 120vh; background: #0f0f0f; display: flex; justify-content: center; align-items: center; }
+            .brazil-container { padding-bottom: 90px; width: 90%; height: 85%; }
+            .brazil-header { width: 100%; height: 15%; color: #fff; font-family: 'Poppins'; font-size: 30px; font-weight: 650; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
+            .brazil-header img {  margin: 20px; }
+            #loc4 { background: url('images/brazil_1.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+            #loc5 { background: url('images/brazil_2.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+            #loc6 { background: url('images/brazil_3.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+        </style>
+    </div>
+
+    <br>
+
+    <div class="canada" id="canada">
+        <div class="canada-container">
+            <div class="canada-header">
+                <h1> Canada </h1>
+                <img src="images/canada-flag.png" width="60px">
+            </div>
+            <div class="locations">
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> Niagara Falls </h2>
+                        <p> Niagara Falls, a world-famous natural attraction on the Canada-USA border, showcases the stunning power and beauty of cascading water, providing boat tours, observation decks, and breathtaking views. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc7"></div>
+                </div>
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> CN Tower </h2>
+                        <p> Toronto's CN Tower is an iconic landmark, providing panoramic views of the city and Lake Ontario from its observation deck and revolving restaurant. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc8"></div>
+                </div>
+                <div class="loc">
+                    <div class="loc-l">
+                        <h2> Banff National Park </h2>
+                        <p>  Located in the Canadian Rockies, Banff National Park is a pristine wilderness offering turquoise lakes, rugged mountains, and abundant wildlife. It's a playground for outdoor adventures and stunning natural beauty. </p>
+                        <a href=""> More info </a>
+                    </div>
+                    <div class="loc-r" id="loc9"></div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .canada { width: 100%; height: 120vh; background: #0f0f0f; display: flex; justify-content: center; align-items: center; }
+            .canada-container { padding-bottom: 90px; width: 90%; height: 85%; }
+            .canada-header { width: 100%; height: 15%; color: #fff; font-family: 'Poppins'; font-size: 30px; font-weight: 650; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
+            .canada-header img {  margin: 20px; }
+            #loc7 { background: url('images/canada_1.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+            #loc8 { background: url('images/canada_2.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+            #loc9 { background: url('images/canada_3.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+        </style>
+    </div>
+
+    <br> <br>
+
+    <div class="more">
+        <h1> More content in the future! </h1>
+        <button onclick="location.href ='home.html#links';"> Go to links </button>
+        <style>  
+            .more { width: 100%; height: 50vh; background: #f0f0f0; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+            .more h1 { color: #1DF765; font-family: 'Poppins'; font-size: 30px; font-weight: 650; }
+            .more button {  margin-top: 30px; width: 200px; height: 40px; background: transparent; border: solid 2.5px #0f0f0f; border-radius: 10px; color: #000; font-family: 'Bebas Neue'; font-size: 26px; } 
+            .more button:hover { background: #00cc33; color: #fff; }
+        </style>
+    </div>
+</body>
+</html>

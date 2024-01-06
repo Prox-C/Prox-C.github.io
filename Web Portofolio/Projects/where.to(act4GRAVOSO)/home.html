@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> WHERE.to - Discover new destinations </title>
+    <link rel="icon" href="images/web_icon.png" sizes="32x32" type="image/png">
+</head>
+<body>
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;500&family=Poppins:wght@400;600&family=Raleway:wght@800&display=swap');
+        * { margin: 0; padding: 0} 
+        .locations { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: center; }
+    </style>
+
+    <div class="nav">
+        <div class="nav-logo">
+            <img src="images/web_icon.png" width="30px">
+            <h4> WHERE.to </h4>
+        </div>
+        <div class="nav-links">
+            <a href="#home.html"> Home </a>
+            <a href="#featured"> Featured </a>
+            <a href="#explore"> Explore </a>
+            <a href="#about"> About </a>
+            <a href="#links"> Links </a>  
+        </div>
+        <style>              
+            .nav { width: 100%; height: 10vh; background: #0f0f0f; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+            .nav-logo { margin-left: 10px; width: 13%; display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; color: #fff; font-weight: 550; font-family: 'Raleway'; font-size: 25px; }
+            .nav-logo h4 { position: relative; left:  10px; }
+            .nav-links { width: 35%; display: flex; flex-direction: row; justify-content: space-around; align-items: center; }
+            .nav a { color: #fff; font-size: 16px; font-family: 'Poppins', "sans-serif"; font-weight: 300; text-decoration: none; transition: .5s ease;}
+            .nav a:hover { color:  #1DF765; }
+        </style>
+    </div>
+
+    <div class="hero" id="hero">
+        <div class="hero-filter"></div>
+            <h1 id="logo"> WHERE.to </h1>
+            <p> Infinite wonders, endless possibilities.</p>
+            <a href="#explore"> EXPLORE </a>
+        <style>          
+            .hero { width: 100%; height: 100vh; background: url('images/cover.gif'); background-repeat: no-repeat; background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+            .hero-filter { width: 100%; height: 100%; background: #000; opacity: 75%; position: absolute; z-index: 0; }
+            #logo { color: #fff; font-family: 'Raleway'; font-size: 50px; font-weight: 800; z-index: 1; }
+            .hero p { color: #fff; font-family: 'Poppins'; font-size: 25px; font-weight: 400; z-index: 1; }
+            .hero a { margin-top: 50px; width: 200px; height: 50px; border: solid 2.5px #fff; border-radius: 10px; background: transparent; color: #fff; display: flex; justify-content: center; align-items: center; font-family: 'Bebas Neue'; font-size: 30px; font-weight: 600; text-decoration: none; z-index: 1; transition: .5s ease;}
+            .hero a:hover { background: #fff; color: #0f0f0f; opacity: 100%; }
+        </style>
+    </div>
+
+    <div class="featured" id="featured">
+        <div class="featured-container">
+            <h2> FEATURED </h2>
+            <img src="images/usa_1.jpg" width="500" height="295px">
+            <div class="featured-description">
+                <h4> The Grand Teton </h4>
+                <p> Grand Teton National Park is an American national park in northwestern Wyoming. At approximately 310,000 acres, the park includes the major peaks of the 40-mile-long Teton Range as well as most of the northern sections of the valley known as Jackson Hole. Grand Teton National Park is only 10 miles south of Yellowstone National Park, to which it is connected by the National Park Service–managed John D. Rockefeller Jr. Memorial Parkway.</p>
+            </div>
+        </div>
+        <style>
+            .featured { width: 100%; height: 50vh; background: #f0f0f0; display: flex; flex-direction: row; justify-content: center; align-items: center; }
+            .featured-container { width: 90%; height: 85%; display: flex; flex-direction: row; justify-content: space-between; }
+            .featured-container h2 { color: #0f0f0f; font-family: 'Bebas Neue'; font-size: 40px; font-weight: 650; }
+            .featured-container img { position: relative; bottom: 2.5   px; border-radius: 25px; }
+            .featured-description { width: 350px; height: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: center; }
+            .featured-description h4 { color: #1DF765; font-size: 24px; font-family: 'Poppins'; font-weight: 650; }
+            .featured-description p { color: #0f0f0f; font-size: 12px; font-family: 'Poppins'; font-weight: 350; }
+        </style>
+    </div>
+
+    <div class="explore" id="explore">
+        <div class="explore-container">
+            <h2> EXPLORE </h2>
+            <p> Select a region </p>
+            <div class="explore-selection">
+                <div class="selection-item" id="select-asia">
+                    <a href="asia.html"> ASIA </a>
+                </div>
+                <div class="selection-item" id="select-america">
+                    <a href="america.html"> AMERICA </a>
+                </div>
+                <div class="selection-item" id="select-europe">
+                    <a href="europe.html"> EUROPE </a>
+                </div>
+            </div>
+        </div>
+        <style>
+            .explore { width: 100%; height: 100vh; background: #0f0f0f; display: flex; justify-content: center; align-items: center; }
+            .explore-container { width: 90%; height: 85%; display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+            .explore-container h2 { color: #fff; font-family: 'Bebas Neue'; font-size: 40px; font-weight: 650; }
+            .explore-container p { color: #1DF765; font-family: 'Raleway'; font-weight: 200; font-size: 20px; }
+            .explore-selection { width: 90%; height: 85%; display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; }
+            .selection-item { width: 300px; height: 450px; border-radius: 15px; }
+            .selection-item a { background-color: rgba(255, 255, 255, .15); backdrop-filter: blur(10px); width: 100%; height: 100%; border-radius: 13.5px; opacity: 85%; color: #000; font-size: 40px; font-family: 'Poppins'; font-weight: 800; display: flex; justify-content: center; align-items: center; text-decoration: none; transition: .5s ease;}
+            .selection-item a:hover { opacity: 85%; color: #1DF765; background: #000; border: solid 2.5px #1DF765; } 
+            #select-asia { background: url('images/asia.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;  }
+            #select-america { background: url('images/america.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center }  
+            #select-europe { background: url('images/europe.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; }
+        </style>
+    </div>
+
+    <div class="about" id="about">
+        <div class="about-container">
+            <h2> ABOUT </h2>
+            <div class="about-content">
+                <h3> WHERE.to </h3>
+                <p>- is a static webpage that I designed and developed in partial fulfillment to the requirements of the course <em>"Web Systems and Technology 1"</em> and serves as my midterm output for the said course. This webpage features a collection of breathtaking locations from select regions and incorporates fundamental HTML concepts such as tags and attributes. </p>
+                <a href="https://github.com/Prox-C" target="_"> Visit my GitHub </a>
+            </div>
+        </div>
+        <style>
+            .about { width: 100%; height: 50vh; background: #f0f0f0; display: flex; justify-content: center; align-items: center; }
+            .about-container { width: 90%; height: 85%; }
+            .about-container h2 { margin-bottom: 20px; color: #0f0f0f; font-family: 'Bebas Neue'; font-size: 40px; font-weight: 650; }
+            .about-content { width: 100%; height: 75%; background: transparent; display: flex; flex-direction: column; justify-content: space-around; align-items: flex-center; }
+            .about-content h3 { color: #1DF765; font-family: 'Raleway'; font-size: 28px; font-weight: 800; }
+            .about-content p { color: #0f0f0f; font-family: 'Poppins'; font-size: 16px; font-weight: 400; }
+            .about-content a { margin-top: 30px; width: 200px; height: 50px; display: flex; justify-content: center;align-items: center; background: transparent; border: solid 2.5px #0f0f0f; border-radius: 10px; font-family: 'Bebas Neue'; color: #0f0f0f; font-size: 20px; font-weight: 650; text-decoration: none; }
+            .about-content a:hover { background: #00cc33; color: #fff; }
+        </style>
+    </div>
+
+    <div class="links" id="links">
+        <div class="links-container">
+            <h2> Quick Links </h2>
+            <div class="links-content">
+                <ul type="none">
+                    <li><a href="asia.html" class="continent-link">Asia</a></li>
+                    <li><a href="asia.html#japan" class="country-link">Japan</a></li>
+                    <li><a href="asia.html#china" class="country-link">China</a></li>
+                    <li><a href="asia.html#thailand" class="country-link">Thailand</a></li>
+                    <br>
+                    <li><a href="america.html" class="continent-link">America</a></li>
+                    <li><a href="america.html#usa" class="country-link">United States of America</a></li>
+                    <li><a href="america.html#brazil" class="country-link">Brazil</a></li>
+                    <li><a href="america.html#canada" class="country-link">Canada</a></li>
+                    <br>
+                    <li><a href="europe.html" class="continent-link">Europe</a></li>
+                    <li><a href="europe.html#france" class="country-link">France</a></li>
+                    <li><a href="europe.html#netherlands" class="country-link">Netherlands</a></li>
+                    <li><a href="europe.html#iceland" class="country-link">Iceland</a></li>
+                    <br>
+                </ul>
+                <img src="images/world-map.png" width="580px">
+            </div>
+        </div>
+        <style>    
+            .links { width: 100%; height:100vh; background: #0f0f0f; background-repeat: no-repeat; background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center; }
+            .links h2 {color: #f0f0f0; font-family: 'Bebas Neue'; font-size: 40px; font-weight: 650 }
+            .links-container { width: 90%; height: 85%; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; } 
+            .links-content { width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+            .links-content img { position: relative; right: 200px; }
+            .links-content a:hover{ text-decoration: underline; }
+            .country-link { color: #f0f0f0; font-family: 'Poppins'; font-weight: 400; font-size: 16px; text-decoration: none; } 
+            .continent-link { color: #1DF765; font-family: 'Poppins'; font-weight: 650; font-size: 24px; text-decoration: none; }
+        </style>
+    </div>
+</body>
+</html>
