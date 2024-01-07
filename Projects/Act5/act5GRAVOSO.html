@@ -6,14 +6,22 @@
 <body>
 	<style>
 
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
 		body{
-			background: #1f1f1f;
+			background: url("./bg.gif");
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 100vh;
 		}
 
 		table, th, td {
-  			border: 1px solid #f2f2f2;
+  			border: 2px solid #f2f2f2;
  			border-collapse: collapse;
-			font-family: 'Product sans', "sans-serif";
+			font-family: 'Century Gothic', "sans-serif";
 			padding: 10px;
 		}
 
@@ -21,7 +29,6 @@
 			font-size: 40px;
 			font-weight: 700;
 			color: #f2f2f2;
-			background: red;
 		}
 
 		td {
@@ -30,8 +37,18 @@
 			text-align: center;
 			color: #f2f2f2;
 		}
+
+		.filter {
+			width: 100%;
+			height: 100%;
+			background: #000;
+			position: absolute;
+			z-index: -5;
+			opacity: 80%;
+		}
 	</style>
 
+	<div class="filter"></div>
 	<table>
 		<tr>
 			<th colspan="4" style="height: 100px;"> Movie World Screening Schedule </th>
