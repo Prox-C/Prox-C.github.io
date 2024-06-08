@@ -322,16 +322,16 @@ header {
     height: 100%;
 }
 .progress:nth-child(1) .outer-row .inner-row {
-    width: 55%;
+    width: 70%;
 }
 .progress:nth-child(2) .outer-row .inner-row {
-    width: 90%;
+    width: 80%;
 }
 .progress:nth-child(3) .outer-row .inner-row {
     width: 50%;
 }
 .progress:nth-child(4) .outer-row .inner-row {
-    width: 45%;
+    width: 50%;
 }
 
 .skills-right p{
